@@ -14,12 +14,11 @@ import java.util.ArrayList;
 
 public enum Champ {
     AATROX("Aatrox"),
+    AHRI("Ahri"),
+    AKALI("Akali"),
+    ALISTAR("Alistar"),
     ANIVIA("Anivia"),
-    /*
-    .
-    .
-    .
-     */
+    AMUMU("Amumu"),
     LEE_SIN("Lee Sin")
     ;
 
@@ -33,15 +32,15 @@ public enum Champ {
 
     public static ArrayList<String> getChampionNames() {
         ArrayList<String> names = new ArrayList<>();
-        /*  Write a method that loops through the array of Champs (google how to get all values of an Enum in Java)
-            and add the name to the list (google how to add an element to a list in Java)
-
-            You'll know it is working if you run the program and the drop
-            down lists the champion names.
-        */
+        Champ[] Array = Champ.values();
+        for(int i =0 ; i < Array.length; i++){
+            names.add(Array[i].name);
+        }
 
 
-        return names;
+        {
+            return names;
+        }
     }
 
 }
